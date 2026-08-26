@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #FFF0F5;
+    --card-bg: #FFFFFF;
+    --text-primary: #1F1218;
+    --text-secondary: #7A5868;
+    --accent: #EC4899;
+    --accent-hover: #DB2777;
+    --accent-light: #FDF2F8;
+    --border-subtle: rgba(236, 72, 153, 0.12);
+    --font-brand: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-brand);
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+/* Custom pink scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(236, 72, 153, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.45);
+}
+
+/* Telegram Mini App Safe-Area viewport support */
+.tg-safe-bottom {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.tg-safe-top {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+

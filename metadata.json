@@ -1,0 +1,6 @@
+{
+  "name": "Ingrebyte",
+  "description": "Minimalistic AI cooking assistant for Telegram Mini App and Web. Suggests recipes from ingredients you have with smart recommendations and step-by-step guidance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
